@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style.css')}}">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home page</a>
+        <a href="/contato">Contato</a>
+        <a href="/produtos">Produtos</a>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+    
+    <footer class="futer">
+        <h3 style="justify-content: center; display: flex;">Desenvolvido por Vinícius Miura 2024</h3>
+        <nav>
+            <a class="smalll" href="/termos-de-uso" target="_blank">Termos de uso</a>
+            <a class="smalll" href="/politicas-de-privacidade" target="_blank">Politicas de privacidade</a>
+            <a class="smalll" href="/como-usar" target="_blank">Como usar</a>
+        </nav>
+    </footer>
+</body>
+</html>

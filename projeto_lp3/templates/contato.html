@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Contato{% endblock %}
+
+{% block content %}
+<h1>Contato</h1>
+<div class="help2"><p>CPF: {{cpf}} <br> CNPJ: {{cnpj}}</p></div> <br>
+<a class="gerador" href="/contato">Gerar CPF e CNPJ</a>
+{% endblock %}
